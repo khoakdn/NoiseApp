@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TQ4.1</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+      <h1>Noise Heatmap</h1>
+      <div class="nav-links">
+        <a href="#" id="navHistory">History</a>
+        <a href="#" id="navSettings">Settings</a>
+        <span id="lastUpdated">Last updated: --:--</span>
+      </div>
+    </header>
+  
+    <!-- Main Content -->
+    <main>
+      <h2 id="floor-title">TQ 4.1</h2>
+
+      <div id="button-container">
+        <button onclick="switchFloor('floor_tq4_1')">TQ4.1</button>
+        <button onclick="switchFloor('floor_tq4_2')">TQ4.2</button>
+        <button onclick="switchFloor('floor_tq5_1')">TQ5.1</button>
+      </div>
+
+      <div id="floor-canvas" class="svg-container"></div>
+
+  
+      <div class="legend">
+        <div class="legend-item">
+          <span class="legend-color quiet"></span>
+          <span>Quiet</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-color moderate"></span>
+          <span>Moderate</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-color loud"></span>
+          <span>Loud</span>
+        </div>
+      </div>
+    </main>
+  
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>
